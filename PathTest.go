@@ -1,7 +1,11 @@
 package main
 
-import "github.com/leweihe/callTest"
+import (
+	"github.com/leweihe/callTest"
+	"gopkg.in/macaron.v1"
+)
 
 func main() {
-	callTest.CallTest()
+	m := macaron.Classic()
+	m.Run()
 }
